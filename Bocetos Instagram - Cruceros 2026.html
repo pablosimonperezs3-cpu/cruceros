@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/Usuario/Downloads/ai_studio_code%20(58).html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bocetos Instagram - Cruceros 2026</title>
+    <style>
+        /* Estilos generales de la presentación */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 40px 20px;
+            color: #262626;
+        }
+
+        .header-presentacion {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-presentacion h1 {
+            color: #1a1a1a;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        /* Contenedor principal flex para alinear los posts lado a lado */
+        .mockups-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        /* Diseño de la tarjeta (Post de Instagram) */
+        .ig-post {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        /* Cabecera del Post */
+        .ig-header {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .ig-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #00376b;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 12px;
+        }
+
+        .ig-header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ig-username {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .ig-location {
+            font-size: 12px;
+            color: #8e8e8e;
+            margin-top: 2px;
+        }
+
+        /* Imagen del Post */
+        .ig-image {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Imágenes personalizadas subidas a Imgur */
+        .img-croacia {
+            background-image: url('https://i.imgur.com/frhR0RD.jpeg');
+        }
+
+        .img-francia {
+            background-image: url('https://i.imgur.com/pbW6aQx.jpeg');
+        }
+
+        /* Barra de Iconos (Like, Comentar, etc.) */
+        .ig-actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 16px 8px 16px;
+        }
+
+        .ig-actions-left, .ig-actions-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .ig-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 16px;
+            cursor: pointer;
+            fill: none;
+            stroke: #262626;
+            stroke-width: 2;
+            transition: transform 0.1s ease;
+        }
+
+        .ig-actions-right .ig-icon {
+            margin-right: 0;
+        }
+
+        .ig-icon:hover {
+            opacity: 0.7;
+        }
+
+        /* Clase para cuando se da Like */
+        .liked {
+            fill: #ed4956 !important;
+            stroke: #ed4956 !important;
+            animation: pulse 0.3s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Sección de Likes */
+        .ig-likes {
+            padding: 0 16px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        /* Texto / Copy */
+        .ig-caption {
+            padding: 0 16px 16px 16px;
+            font-size: 14px;
+            line-height: 1.5;
+            white-space: pre-wrap; /* Mantiene los saltos de línea */
+        }
+
+        .ig-caption .user {
+            font-weight: 600;
+            margin-right: 4px;
+        }
+
+        .ig-link {
+            color: #00376b;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .ig-link:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header-presentacion">
+        <h1>Bocetos de Publicaciones - Campaña Cruceros 2026</h1>
+    </div>
+
+    <div class="mockups-container">
+
+        <!-- ================= POST 1: CROACIA ================= -->
+        <div class="ig-post">
+            <!-- Cabecera -->
+            <div class="ig-header">
+                <div class="ig-avatar">ID</div>
+                <div class="ig-header-text">
+                    <span class="ig-username">ideatur_viajes</span>
+                    <span class="ig-location">Croacia y Montenegro</span>
+                </div>
+            </div>
+
+            <!-- Foto -->
+            <div class="ig-image img-croacia"></div>
+
+            <!-- Botones -->
+            <div class="ig-actions">
+                <div class="ig-actions-left">
+                    <!-- Icono Corazón -->
+                    <svg class="ig-icon btn-like" viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                    </svg>
+                    <!-- Icono Comentario -->
+                    <svg class="ig-icon" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <!-- Icono Enviar -->
+                    <svg class="ig-icon" viewBox="0 0 24 24">
+                        <line x1="22" y1="2" x2="11" y2="13" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2" stroke-linecap="round" stroke-linejoin="round"></polygon>
+                    </svg>
+                </div>
+                <div class="ig-actions-right">
+                    <!-- Icono Guardar -->
+                    <svg class="ig-icon" viewBox="0 0 24 24">
+                        <polygon points="19 21 12 16 5 21 5 3 19 3 19 21" stroke-linecap="round" stroke-linejoin="round"></polygon>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Likes -->
+            <div class="ig-likes">
+                Le gusta a <span id="likes-1">145</span> personas
+            </div>
+
+            <!-- Texto / Copy -->
+            <div class="ig-caption">
+<span class="user">ideatur_viajes</span> ¡Navega por las joyas del Adriático! 🌊✨ Descubre Croacia y Montenegro en un exclusivo crucero de 8 días. Desde las impresionantes murallas de Dubrovnik hasta la espectacular bahía de Kotor. 
+🗓️ 23 al 30 de julio de 2026.
+👉 Mira el itinerario completo aquí: <a href="file:///C:/Users/Usuario/Downloads/ai_studio_code%20(58).html#" class="ig-link">linktr.ee/ideatur</a>
+            </div>
+        </div>
+
+        <!-- ================= POST 2: SENA / NORMANDÍA ================= -->
+        <div class="ig-post">
+            <!-- Cabecera -->
+            <div class="ig-header">
+                <div class="ig-avatar">ID</div>
+                <div class="ig-header-text">
+                    <span class="ig-username">ideatur_viajes</span>
+                    <span class="ig-location">París y Normandía</span>
+                </div>
+            </div>
+
+            <!-- Foto -->
+            <div class="ig-image img-francia"></div>
+
+            <!-- Botones -->
+            <div class="ig-actions">
+                <div class="ig-actions-left">
+                    <!-- Icono Corazón -->
+                    <svg class="ig-icon btn-like" viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                    </svg>
+                    <!-- Icono Comentario -->
+                    <svg class="ig-icon" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <!-- Icono Enviar -->
+                    <svg class="ig-icon" viewBox="0 0 24 24">
+                        <line x1="22" y1="2" x2="11" y2="13" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2" stroke-linecap="round" stroke-linejoin="round"></polygon>
+                    </svg>
+                </div>
+                <div class="ig-actions-right">
+                    <!-- Icono Guardar -->
+                    <svg class="ig-icon" viewBox="0 0 24 24">
+                        <polygon points="19 21 12 16 5 21 5 3 19 3 19 21" stroke-linecap="round" stroke-linejoin="round"></polygon>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Likes -->
+            <div class="ig-likes">
+                Le gusta a <span id="likes-2">89</span> personas
+            </div>
+
+            <!-- Texto / Copy -->
+            <div class="ig-caption">
+<span class="user">ideatur_viajes</span> Vive un crucero fluvial de 8 días por el Sena descubriendo la Normandía más bella. 
+🗓️ 10 al 17 de julio de 2026.
+👉 Toda la info y el itinerario aquí: <a href="file:///C:/Users/Usuario/Downloads/ai_studio_code%20(58).html#" class="ig-link">linktr.ee/ideatur</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript para interactividad (Sistema de Likes) -->
+    <script>
+        // Seleccionamos todos los botones de corazón
+        const likeButtons = document.querySelectorAll('.btn-like');
+
+        likeButtons.forEach((btn, index) => {
+            btn.addEventListener('click', function() {
+                // Alternamos la clase 'liked' (que lo pone rojo)
+                this.classList.toggle('liked');
+                
+                // Efecto visual divertido: sumar o restar un Like
+                const likesElement = document.getElementById(`likes-${index + 1}`);
+                let currentLikes = parseInt(likesElement.innerText);
+                
+                if(this.classList.contains('liked')) {
+                    likesElement.innerText = currentLikes + 1;
+                } else {
+                    likesElement.innerText = currentLikes - 1;
+                }
+            });
+        });
+    </script>
+
+</body></html>
